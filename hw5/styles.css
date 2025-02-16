@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #FFB6C1; 
+}
+
+h2 {
+    color: #D87093; 
+    text-align: center;
+}
+
+button {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF69B4; 
+}
+
+button:disabled {
+    background-color: #D3D3D3;
+    cursor: not-allowed;
+}
+
+#clickMessage {
+    font-size: 20px;
+    color: #FF69B4;
+    text-align: center;
+}
+
+#timerDisplay, #stopwatchDisplay {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FF69B4;
+    text-align: center;
+}
+
+.task {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    width: 300px;
+    text-align: center; 
+}
+
+.cat {
+    position: fixed;
+    left: 0; 
+    bottom: 0; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
