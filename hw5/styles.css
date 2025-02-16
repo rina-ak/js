@@ -4,10 +4,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
     margin: 0;
     color: #FFB6C1; 
+    padding-top: 40px;
 }
 
 h2 {
@@ -57,18 +58,49 @@ button:disabled {
     width: 300px;
     text-align: center; 
 }
-
-.cat {
+.cat-back-container {
     position: fixed;
     left: 0; 
-    bottom: 0; 
+    bottom: 0;
     margin-left: 20px; 
     margin-bottom: 20px;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cat {
+    width: 150px;
+    height: auto;
 }
 
 img {
-    width: 150px;
+    width: 100%;
     height: auto;
     display: block;
+}
+
+.back-button {
+    text-decoration: none;
+}
+
+.back-button button {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button button:hover {
+    background-color: #FF69B4;
+    transform: scale(1.1);
+}
+
+.back-button button:focus {
+    outline: none;
 }
