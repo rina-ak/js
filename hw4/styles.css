@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#coordinates {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFB6C1; 
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.2s;
+}
