@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.clickbox {
+  background-color: lightsteelblue;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1vw;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.box {
+  background-color: #ddd;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confetti {
+  position: absolute;
+  pointer-events: none;
+  animation: flyAway 1.5s ease-out forwards;
+}
+
+@keyframes flyAway {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--x), var(--y)) scale(0.5); opacity: 0; }
+}
